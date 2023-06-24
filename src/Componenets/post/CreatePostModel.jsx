@@ -1,6 +1,7 @@
 import { Button, Modal, ModalBody, ModalContent, ModalOverlay } from '@chakra-ui/react'
 import React, { useState } from 'react'
 import { FaPhotoVideo } from 'react-icons/fa';
+import { GoLocation } from 'react-icons/go';
 import "./CreatePostModel.css";
 
 
@@ -11,6 +12,7 @@ const CreatePostModel = ({
 
     const [file, setFile] = useState();
     const [caption, setCaption] = useState();
+
 
     const handleDrop = (event) => {
         event.preventDefalult()
@@ -41,17 +43,16 @@ const CreatePostModel = ({
             setFile(null);
             alert("please select an image or video");
         }
-
-        const handleCaptionChange = (e) => {
-            setCaption(e.target.value);
-        }
     }
 
+    const handleCaptionChange = (e) => {
+        setCaption(e.target.value);
+    }
 
 
     return (
         <div>
-            <Modal size={"4xl"} onClose={onClose} isOpen={true} isCentered>
+            <Modal size={"4xl"} onClose={onClose} isOpen={isOpen} isCentered>
                 <ModalOverlay />
                 <ModalContent>
                     <div className='flex justify-between py-1 px-10 items-center'>
@@ -86,11 +87,17 @@ const CreatePostModel = ({
                             <div className='w-[1px] border-2 h-full'> </div>
                             <div className='w-[50%]'>
                                 <div className='flex items-center px-2'>
-                                    <img className='w-7 h-7 rounded-full' src='https://cdn.pixabay.com/photo/2023/06/07/17/24/field-8047711_1280.jpg' alt='' />
-                                    <p className='font-semibold ml-4'>username</p>
+                                    <img className='w-7 h-7 rounded-full' src='https://s3.amazonaws.com/im-my-docs/EnquiryAttachment/IJ/IG/SN/MY-2960011/1-sugarcane-harvester-1578026250205-png.png' alt='' />
+                                    <p className='font-semibold ml-4'>Ashwatej</p>
                                 </div>
-                                <div>
+                                <div className='px-2'>
                                     <textarea placeholder='write caption...' className='captionInput' rows='8' onChange={handleCaptionChange}></textarea>
+                                </div>
+
+                                <hr />
+                                <div className='p-2 flex justify-between items-center'>
+                                    <input className='locationInput' type='text' placeholder='location ' name='location' />
+                                    <GoLocation />
                                 </div>
                             </div>
                         </div>

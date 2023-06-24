@@ -13,7 +13,7 @@ const CommentModel = ({ onClose, isOpen }) => {
                     <ModalBody>
                         <div className='flex h-[75vh]'>
                             <div className='w-[45%] flex-col justify-center'>
-                                <img className='max-h-full w-full' src='https://th.bing.com/th/id/OIP.JcjsRrSBaO2tTFpZGNICXgHaHa?pid=ImgDet&rs=1' alt='' />
+                                <img className='max-h-full w-full' src='https://s3.amazonaws.com/im-my-docs/EnquiryAttachment/IJ/IG/SN/MY-2960011/1-sugarcane-harvester-1578026250205-png.png' alt='' />
                             </div>
                             <div className=' w-[55%] pl-10'>
                                 <div className='flex justify-between items-center py-5'>

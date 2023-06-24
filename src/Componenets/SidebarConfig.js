@@ -5,7 +5,7 @@ import { FaPhotoVideo } from 'react-icons/fa';
 export const menu = [
     { title: "Home", icon: <AiOutlineHome className='text-2xl mr-5'></AiOutlineHome>, activeIcon: <AiFillHome className='text-2xl mr-5'></AiFillHome> },
     {
-        title: "search", icon: <MdPersonSearch className='text-2xl mr-5'></MdPersonSearch>, activeIcon: <MdPersonSearch className='text-2xl mr-5'></MdPersonSearch>
+        title: "Search", icon: <MdPersonSearch className='text-2xl mr-5'></MdPersonSearch>, activeIcon: <MdPersonSearch className='text-2xl mr-5'></MdPersonSearch>
     },
     {
         title: "AddEmployee", icon: <AiOutlinePlusCircle className='text-2xl mr-5'></AiOutlinePlusCircle>, activeIcon: <AiFillPlusCircle className='text-2xl mr-5'></AiFillPlusCircle>

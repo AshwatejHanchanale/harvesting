@@ -43,7 +43,7 @@ const PostCard = () => {
                 </div>
 
                 <div className='w-full'>
-                    <img className='w-full' src="https://cdn.pixabay.com/photo/2018/03/12/12/32/woman-3219507_1280.jpg" alt='' />
+                    <img className='w-full' src="https://s3.amazonaws.com/im-my-docs/EnquiryAttachment/IJ/IG/SN/MY-2960011/1-sugarcane-harvester-1578026250205-png.png" alt='' />
                 </div>
 
                 <div className='flex justify-between items-center w-full px-5 py-4'>

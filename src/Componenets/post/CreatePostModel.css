@@ -43,3 +43,11 @@
     resize: none;
     font-size: small;
 }
+
+.locationInput {
+    border: none;
+    outline: none;
+    width: 90%;
+
+
+}
